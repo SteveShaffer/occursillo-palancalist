@@ -30,7 +30,8 @@ jobs:
         run: |
           git config --global user.name 'Steve Shaffer'
           git config --global user.email 'steveshaffer@users.noreply.github.com'
-          git checkout -b pages
+          git fetch
+          git switch pages
           wget https://occursillo.org/palancalist
           mv palancalist index.html
           git add -A
